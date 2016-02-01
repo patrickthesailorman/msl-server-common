@@ -3,27 +3,27 @@
  */
 package com.kenzan.msl.common.bo;
 
-import com.kenzan.msl.common.dao.AbstractDao;
-import com.kenzan.msl.common.dao.AbstractSongDao;
+import com.kenzan.msl.common.dto.AbstractDto;
+import com.kenzan.msl.common.dto.AbstractSongDto;
 
 /**
  * @author billschwanitz
  */
 public class SongListBo extends AbstractListBo<SongBo> {
     @Override
-    public SongBo convertDaoToBo(AbstractDao abstractDao) {
-        AbstractSongDao abstractSongDao = (AbstractSongDao) abstractDao;
+    public SongBo convertDtoToBo(AbstractDto abstractDto) {
+        AbstractSongDto abstractSongDto = (AbstractSongDto) abstractDto;
 
         SongBo songBo = new SongBo();
-        songBo.setSongId(abstractSongDao.getSongId());
-        songBo.setSongName(abstractSongDao.getSongName());
-        songBo.setDuration(abstractSongDao.getSongDuration());
-        songBo.setYear(abstractSongDao.getAlbumYear());
-        songBo.setArtistId(abstractSongDao.getArtistId());
-        songBo.setArtistMbid(abstractSongDao.getArtistMbid());
-        songBo.setArtistName(abstractSongDao.getArtistName());
-        songBo.setAlbumId(abstractSongDao.getAlbumId());
-        songBo.setAlbumName(abstractSongDao.getAlbumName());
+        songBo.setSongId(abstractSongDto.getSongId());
+        songBo.setSongName(abstractSongDto.getSongName());
+        songBo.setDuration(abstractSongDto.getSongDuration());
+        songBo.setYear(abstractSongDto.getAlbumYear());
+        songBo.setArtistId(abstractSongDto.getArtistId());
+        songBo.setArtistMbid(abstractSongDto.getArtistMbid());
+        songBo.setArtistName(abstractSongDto.getArtistName());
+        songBo.setAlbumId(abstractSongDto.getAlbumId());
+        songBo.setAlbumName(abstractSongDto.getAlbumName());
 
         return songBo;
     }

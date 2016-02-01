@@ -3,7 +3,7 @@
  */
 package com.kenzan.msl.common.bo;
 
-import com.kenzan.msl.common.dao.AbstractDao;
+import com.kenzan.msl.common.dto.AbstractDto;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -23,13 +23,13 @@ public abstract class AbstractListBo<T extends AbstractBo> {
         this.pagingState = pagingState;
     }
 
-    public void add(AbstractDao dao) {
-        boList.add(convertDaoToBo(dao));
+    public void add(AbstractDto dto) {
+        boList.add(convertDtoToBo(dto));
     }
 
     public List<T> getBoList() {
         return boList;
     }
 
-    public abstract T convertDaoToBo(AbstractDao dao);
+    public abstract T convertDtoToBo(AbstractDto dto);
 }

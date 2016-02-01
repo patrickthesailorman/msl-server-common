@@ -1,47 +1,14 @@
 /*
  * Copyright 2015, Kenzan, All rights reserved.
  */
-package com.kenzan.msl.common.dao;
-
+package com.kenzan.msl.common.dto;
 
 import java.util.UUID;
 
 /**
- *
- *
  * @author billschwanitz
  */
-public abstract class AbstractSongDao extends AbstractDao {
-
-    /**
-     * @return the songId
-     */
-    public abstract UUID getSongId();
-
-    /**
-     * @param songId the songId to set
-     */
-    public abstract void setSongId(UUID songId);
-
-    /**
-     * @return the songName
-     */
-    public abstract String getSongName();
-
-    /**
-     * @param songName the songName to set
-     */
-    public abstract void setSongName(String songName);
-
-    /**
-     * @return the songDuration
-     */
-    public abstract Integer getSongDuration();
-
-    /**
-     * @param songDuration the songDuration to set
-     */
-    public abstract void setSongDuration(Integer songDuration);
+public abstract class AbstractAlbumDto extends AbstractDto {
 
     /**
      * @return the albumId
@@ -66,12 +33,12 @@ public abstract class AbstractSongDao extends AbstractDao {
     /**
      * @return the albumYear
      */
-    public abstract Integer getAlbumYear();
+    public abstract int getAlbumYear();
 
     /**
      * @param albumYear the albumYear to set
      */
-    public abstract void setAlbumYear(Integer albumYear);
+    public abstract void setAlbumYear(int albumYear);
 
     /**
      * @return the artistId
@@ -103,4 +70,15 @@ public abstract class AbstractSongDao extends AbstractDao {
      */
     public abstract void setArtistMbid(UUID artistMbid);
 
+    /**
+     * @return the album imageLink
+     */
+    public abstract String getImageLink();
+
+    /**
+     * @param imageLink the imageLink to set
+     */
+    public abstract void setImageLink(String imageLink);
+
 }
+
