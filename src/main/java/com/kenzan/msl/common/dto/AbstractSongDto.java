@@ -103,4 +103,14 @@ public abstract class AbstractSongDto extends AbstractDto {
      */
     public abstract void setArtistMbid(UUID artistMbid);
 
+    /**
+     * @return the album imageLink
+     */
+    public abstract String getImageLink();
+
+    /**
+     * @param imageLink the imageLink to set
+     */
+    public abstract void setImageLink(String imageLink);
+
 }

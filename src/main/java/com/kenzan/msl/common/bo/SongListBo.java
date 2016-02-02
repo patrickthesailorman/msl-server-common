@@ -24,6 +24,7 @@ public class SongListBo extends AbstractListBo<SongBo> {
         songBo.setArtistName(abstractSongDto.getArtistName());
         songBo.setAlbumId(abstractSongDto.getAlbumId());
         songBo.setAlbumName(abstractSongDto.getAlbumName());
+        songBo.setImageLink(abstractSongDto.getImageLink());
 
         return songBo;
     }
