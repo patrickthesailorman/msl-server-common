@@ -1,20 +1,20 @@
 /*
  * Copyright 2015, Kenzan, All rights reserved.
  */
-package com.kenzan.msl.common.dao;
+package com.kenzan.msl.common.dto;
 
 import java.util.UUID;
 
 /**
- * Common super class for all Artist DAOs.
+ * Common super class for all Artist DTOs.
  *
- * NOTE: It would be nice to define here the columns that all Artist DAOs have in common.
+ * NOTE: It would be nice to define here the columns that all Artist DTOs have in common.
  * Unfortunately the Datastax Mapper does not reflect on super classes when mapping result rows to
- * DAOs.
+ * DTOs.
  *
  * @author billschwanitz
  */
-public abstract class AbstractArtistDao extends AbstractDao {
+public abstract class AbstractArtistDto extends AbstractDto {
 
     /**
      * @return the artistId

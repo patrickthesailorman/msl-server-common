@@ -4,8 +4,8 @@
 package com.kenzan.msl.common.bo;
 
 
-import com.kenzan.msl.common.dao.AbstractAlbumDao;
-import com.kenzan.msl.common.dao.AbstractDao;
+import com.kenzan.msl.common.dto.AbstractAlbumDto;
+import com.kenzan.msl.common.dto.AbstractDto;
 
 /**
  * @author billschwanitz
@@ -13,16 +13,16 @@ import com.kenzan.msl.common.dao.AbstractDao;
 public class AlbumListBo extends AbstractListBo<AlbumBo> {
 
     @Override
-    public AlbumBo convertDaoToBo(AbstractDao abstractDao) {
-        AbstractAlbumDao abstractAlbumDao = (AbstractAlbumDao) abstractDao;
+    public AlbumBo convertDtoToBo(AbstractDto abstractDto) {
+        AbstractAlbumDto abstractAlbumDto = (AbstractAlbumDto) abstractDto;
 
         AlbumBo albumBo = new AlbumBo();
-        albumBo.setAlbumId(abstractAlbumDao.getAlbumId());
-        albumBo.setAlbumName(abstractAlbumDao.getAlbumName());
-        albumBo.setYear(abstractAlbumDao.getAlbumYear());
-        albumBo.setArtistId(abstractAlbumDao.getArtistId());
-        albumBo.setArtistName(abstractAlbumDao.getArtistName());
-        albumBo.setImageLink(abstractAlbumDao.getImageLink());
+        albumBo.setAlbumId(abstractAlbumDto.getAlbumId());
+        albumBo.setAlbumName(abstractAlbumDto.getAlbumName());
+        albumBo.setYear(abstractAlbumDto.getAlbumYear());
+        albumBo.setArtistId(abstractAlbumDto.getArtistId());
+        albumBo.setArtistName(abstractAlbumDto.getArtistName());
+        albumBo.setImageLink(abstractAlbumDto.getImageLink());
 
         return albumBo;
     }

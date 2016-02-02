@@ -3,21 +3,21 @@
  */
 package com.kenzan.msl.common.bo;
 
-import com.kenzan.msl.common.dao.AbstractArtistDao;
-import com.kenzan.msl.common.dao.AbstractDao;
+import com.kenzan.msl.common.dto.AbstractArtistDto;
+import com.kenzan.msl.common.dto.AbstractDto;
 
 /**
  * @author billschwanitz
  */
 public class ArtistListBo extends AbstractListBo<ArtistBo> {
     @Override
-    public ArtistBo convertDaoToBo(AbstractDao abstractDao) {
-        AbstractArtistDao abstractArtistDao = (AbstractArtistDao) abstractDao;
+    public ArtistBo convertDtoToBo(AbstractDto abstractDto) {
+        AbstractArtistDto abstractArtistDto = (AbstractArtistDto) abstractDto;
 
         ArtistBo artistBo = new ArtistBo();
-        artistBo.setArtistId(abstractArtistDao.getArtistId());
-        artistBo.setArtistMbid(abstractArtistDao.getArtistMbid());
-        artistBo.setArtistName(abstractArtistDao.getArtistName());
+        artistBo.setArtistId(abstractArtistDto.getArtistId());
+        artistBo.setArtistMbid(abstractArtistDto.getArtistMbid());
+        artistBo.setArtistName(abstractArtistDto.getArtistName());
 
         return artistBo;
     }
