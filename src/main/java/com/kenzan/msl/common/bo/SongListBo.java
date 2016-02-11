@@ -7,7 +7,7 @@ import com.kenzan.msl.common.dto.AbstractDto;
 import com.kenzan.msl.common.dto.AbstractSongDto;
 
 /**
- * @author billschwanitz
+ * @author kenzan
  */
 public class SongListBo extends AbstractListBo<SongBo> {
     @Override

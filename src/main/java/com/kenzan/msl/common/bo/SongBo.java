@@ -9,7 +9,7 @@ import java.util.UUID;
 /**
  * 
  * 
- * @author billschwanitz
+ * @author kenzan
  */
 public class SongBo extends AbstractBo {
     private UUID songId;

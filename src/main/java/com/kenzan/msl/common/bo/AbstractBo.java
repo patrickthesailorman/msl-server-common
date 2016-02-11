@@ -6,7 +6,7 @@ package com.kenzan.msl.common.bo;
 /**
  * 
  * 
- * @author billschwanitz
+ * @author kenzan
  */
 public abstract class AbstractBo {
 

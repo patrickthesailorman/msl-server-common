@@ -9,7 +9,7 @@ import java.util.UUID;
 /**
  *
  *
- * @author billschwanitz
+ * @author kenzan
  */
 public abstract class AbstractSongDto extends AbstractDto {
 

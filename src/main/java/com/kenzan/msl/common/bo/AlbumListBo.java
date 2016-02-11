@@ -8,7 +8,7 @@ import com.kenzan.msl.common.dto.AbstractAlbumDto;
 import com.kenzan.msl.common.dto.AbstractDto;
 
 /**
- * @author billschwanitz
+ * @author kenzan
  */
 public class AlbumListBo extends AbstractListBo<AlbumBo> {
 
