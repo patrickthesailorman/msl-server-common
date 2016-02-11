@@ -18,7 +18,7 @@ public class AlbumBo extends AbstractBo {
     private UUID artistId;
     private UUID artistMbid;
     private String artistName;
-    private List<String> songsList = new ArrayList();
+    private List<String> songsList = new ArrayList<String>();
     private boolean isInMyLibrary;
     private String favoritesTimestamp;
 
