@@ -12,7 +12,7 @@ import java.util.UUID;
  * Unfortunately the Datastax Mapper does not reflect on super classes when mapping result rows to
  * DTOs.
  *
- * @author billschwanitz
+ * @author kenzan
  */
 public abstract class AbstractArtistDto extends AbstractDto {
 

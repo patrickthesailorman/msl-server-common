@@ -6,7 +6,7 @@ package com.kenzan.msl.common.dto;
 import java.util.UUID;
 
 /**
- * @author billschwanitz
+ * @author kenzan
  */
 public abstract class AbstractAlbumDto extends AbstractDto {
 

@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.UUID;
 
 /**
- * @author billschwanitz
+ * @author kenzan
  */
 public abstract class AbstractListBo<T extends AbstractBo> {
     private UUID pagingState;
