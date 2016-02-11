@@ -4,7 +4,7 @@
     <groupId>msl.server</groupId>
     <artifactId>msl-server-common</artifactId>
     <packaging>jar</packaging>
-    <version>${msl-server.version}</version>
+    <version>1.0.0</version>
 
     <build>
         <plugins>
@@ -117,6 +117,8 @@
     </build>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
         <swagger-codegen-cli-jar>../../common/swagger-codegen-cli.jar</swagger-codegen-cli-jar>
         <json-configuration-file>../../msl-pages/swagger/package.json</json-configuration-file>
         <yaml-spec>../../msl-pages/swagger/api/swagger/swagger.yaml</yaml-spec>
