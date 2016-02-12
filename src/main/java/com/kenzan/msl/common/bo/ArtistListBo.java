@@ -10,6 +10,14 @@ import com.kenzan.msl.common.dto.AbstractDto;
  * @author kenzan
  */
 public class ArtistListBo extends AbstractListBo<ArtistBo> {
+
+    /**
+     * Implementation of super class method for Artists
+     * Creates a new ArtistBo and map into it the info from the given Dto
+     *
+     * @param abstractDto the Dto to be converted
+     * @return the Dto's equivalent Bo
+     */
     @Override
     public ArtistBo convertDtoToBo(AbstractDto abstractDto) {
         AbstractArtistDto abstractArtistDto = (AbstractArtistDto) abstractDto;
