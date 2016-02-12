@@ -12,6 +12,13 @@ import com.kenzan.msl.common.dto.AbstractDto;
  */
 public class AlbumListBo extends AbstractListBo<AlbumBo> {
 
+    /**
+     * Implementation of super class method for Albums
+     * Creates a new AlbumBo and map into it the info from the given Dto
+     *
+     * @param abstractDto the Dto to be converted
+     * @return the Dto's equivalent Bo
+     */
     @Override
     public AlbumBo convertDtoToBo(AbstractDto abstractDto) {
         AbstractAlbumDto abstractAlbumDto = (AbstractAlbumDto) abstractDto;
