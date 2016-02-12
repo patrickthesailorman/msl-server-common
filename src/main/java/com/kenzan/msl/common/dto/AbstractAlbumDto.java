@@ -33,12 +33,12 @@ public abstract class AbstractAlbumDto extends AbstractDto {
     /**
      * @return the albumYear
      */
-    public abstract int getAlbumYear();
+    public abstract Integer getAlbumYear();
 
     /**
      * @param albumYear the albumYear to set
      */
-    public abstract void setAlbumYear(int albumYear);
+    public abstract void setAlbumYear(Integer albumYear);
 
     /**
      * @return the artistId
