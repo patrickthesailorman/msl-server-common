@@ -5,6 +5,8 @@
 src/gen/java/io/swagger/api/*.java
 src/gen/java/io/swagger/model
 src/main/webapp
+README.md
+pom.xml
 
 .DS_Store
 .idea
