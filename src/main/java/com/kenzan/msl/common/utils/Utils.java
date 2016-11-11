@@ -8,6 +8,7 @@ public class Utils {
      * Retrieves the host for an URL
      *
      * @param url String
+     * @param port String
      * @return
      */
     public static String getHost(String url, String port){
@@ -24,10 +25,14 @@ public class Utils {
             end = end >= 0 ? end : url.length();
 
             int urlPort = url.indexOf(':', doubleslash);
-            if (urlPort > 0 && urlPort < end) {
-                return url.substring(0, end) + ":" + port;
+
+            String result;
+            if (port.length() > 0) {
+                result = url.substring(0, urlPort) + ":" + port;
+            } else {
+                result = url.substring(0, end);
             }
-            return url.substring(0, urlPort);
+            return result;
         }
     }
 }

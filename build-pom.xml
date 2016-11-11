@@ -4,7 +4,7 @@
     <groupId>msl.server</groupId>
     <artifactId>msl-server-common</artifactId>
     <packaging>jar</packaging>
-    <version>1.2.0</version>
+    <version>1.3.0</version>
 
     <build>
         <plugins>
@@ -66,7 +66,7 @@
                                 <argument>${json-configuration-file}</argument>
 
                                 <argument>--artifact-version</argument>
-                                <argument>${msl-server.version}</argument>
+                                <argument>${project.version}</argument>
 
                             </arguments>
                         </configuration>
@@ -100,9 +100,9 @@
                 <configuration>
                     <groupId>msl.server</groupId>
                     <artifactId>msl-common</artifactId>
-                    <version>${msl-server.version}</version>
+                    <version>${project.version}</version>
                     <packaging>jar</packaging>
-                    <file>${output-directory}/target/swagger-jaxrs-server-${msl-server.version}.jar</file>
+                    <file>${output-directory}/target/swagger-jaxrs-server-${project.version}.jar</file>
                     <generatePom>false</generatePom>
                 </configuration>
                 <executions>
@@ -131,7 +131,6 @@
         <maven-compiler-plugin.version>3.3</maven-compiler-plugin.version>
         <maven-install-plugin.version>2.5.1</maven-install-plugin.version>
 
-        <msl-server.version>1.2.0</msl-server.version>
     </properties>
 
 </project>
