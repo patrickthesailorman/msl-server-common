@@ -11,7 +11,7 @@ You can run build all of the MSL microservices by running `mvn clean compile` fr
 The **msl-server-common** sub-repository contains classes that are used by multiple microservices, including models and DTOs. There is no need to build **msl-server-common** separately.
 
  ## LICENSE
-Copyright 2015 Kenzan, LLC <http://kenzan.com>
+Copyright 2017 Kenzan, LLC <http://kenzan.com>
  
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
